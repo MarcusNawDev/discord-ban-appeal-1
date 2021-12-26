@@ -44,9 +44,9 @@ function App() {
         <Router className="App">
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>{process.env.REACT_APP_SITE_TITLE ? process.env.REACT_APP_SITE_TITLE : `Peppleton Railways | Ban Appeal`}</title>
+                <title>{process.env.REACT_APP_SITE_TITLE ? process.env.REACT_APP_SITE_TITLE : `Peppleton Railways | Appeal`}</title>
                 <meta name="description"
-                      content={process.env.REACT_APP_SITE_DESCRIPTION ? process.env.REACT_APP_SITE_DESCRIPTION : `Peppleton Railways | Ban Appeal`}/>
+                      content={process.env.REACT_APP_SITE_DESCRIPTION ? process.env.REACT_APP_SITE_DESCRIPTION : `Peppleton Railways | Appeal`}/>
                 <link rel="icon" href={icon} type="image/x-icon"/>
             </Helmet>
             <Grid container
@@ -59,7 +59,7 @@ function App() {
                     <Box style={{backgroundImage: `url(${process.env.REACT_APP_BANNER_URL})`}} className={"banner"}>
                         {loading ? <Skeleton variant={'rect'} height={150} width={150} style={{'margin': '0 auto'}} /> :
                             <img alt={title + " Discord Icon"} src={icon} className={"icon"} height={150}/>}
-                        {loading ? <Skeleton variant={'text'} width={750} height={37}/> : <h1>{title}Peppleton Railways | Ban Appeal</h1>}
+                        {loading ? <Skeleton variant={'text'} width={750} height={37}/> : <h1>{title}Peppleton Railways | Appeal</h1>}
                     </Box>
                 </Grid>
                 <Switch>
